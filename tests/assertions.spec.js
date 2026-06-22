@@ -9,5 +9,5 @@ test('check',async ({page})=>{
 
    await expect(chk).toBeChecked()
 
-
+  
 })

@@ -32,6 +32,9 @@ test('Create Auth State', async ({ page }) => {
   // Save authenticated state
   await page.context().storageState({
     path: 'auth.json'
+    
   });
 
 });
+
+

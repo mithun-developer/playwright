@@ -5,8 +5,7 @@ test('Geolocation Test', async ({ browser }) => {
     const context = await browser.newContext()
     await context.grantPermissions(
          ['geolocation',
-            'notifications'
-            
+            'notifications',
             
         
 ],
