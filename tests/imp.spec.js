@@ -41,23 +41,23 @@ expect(response.status()).toBe(200);
 
 //------------------------------------------
          //API Validation Traditional way
-const response = await page.waitForResponse(
+// const response = await page.waitForResponse(
 
-  function(response){
+//   function(response){
 
-    return response.url().includes('/users');
+//     return response.url().includes('/users');
 
-  }
+//   }
 
-);
+// );
 
 
 
 // For fake camera/microphone devices access
 
-const browser = await chromium.launch({
-    args: [
-        '--use-fake-ui-for-media-stream',
-        '--use-fake-device-for-media-stream'
-    ]
-});
+// const browser = await chromium.launch({
+//     args: [
+//         '--use-fake-ui-for-media-stream',
+//         '--use-fake-device-for-media-stream'
+//     ]
+// });
