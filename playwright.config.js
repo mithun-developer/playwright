@@ -122,6 +122,18 @@ export default defineConfig({
 
 
 
+module.exports = defineConfig({
+  reporter: [
+    ['list'],
+    ['html', { open: 'never' }],
+    ['junit', { outputFile: 'results.xml' }]
+  ],
 
+  use: {
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+    trace: 'on-first-retry'
+  }
+});
 
 
