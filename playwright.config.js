@@ -78,21 +78,21 @@ export default defineConfig({
     
     //-------------------My storage state code ----------------------------
 
-//  {
+ {
 
 
-//        name: 'setup',
-//    testMatch: 'auth.setup.spec.js'
-//     },
+       name: 'setup',
+   testMatch: 'auth.setup.spec.js'
+    },
 
-//     {
-//       name: 'chromium',
-//       use: {
-//         storageState: 'auth.json'
-//       },
+    {
+      name: 'chromium',
+      use: {
+        storageState: 'auth.json'
+      },
 
-//       dependencies: ['setup']
-//     }
+      dependencies: ['setup']
+    }
 
 
   
