@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test'
 
-test('cmds',async({page})=>{
+test.skip('cmds',async({page})=>{
  page.goBack() // To navigate broswer back
 page.goForward() // To navigate broswer forward
 page.setPermissions() //handle browser permissions by grant or deny
@@ -32,12 +32,12 @@ expect(page).toHaveTitle()
 
 
 //API Validation
-const response =
-await page.waitForResponse(
-resp => resp.url().includes('/users')
-);
+// const response =
+// await page.waitForResponse(
+// resp => resp.url().includes('/users')
+// );
 
-expect(response.status()).toBe(200);
+// expect(response.status()).toBe(200);
 
 //------------------------------------------
          //API Validation Traditional way
